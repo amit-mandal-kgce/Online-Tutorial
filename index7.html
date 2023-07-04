@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Payment</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body>
+    <div class=" col-sm-3 wrapper">
+        <div class="payment">
+            <div class="payment-logo">
+                <p>P</p>
+            </div>
+            <h2>Payment Gateway</h2>
+            <div class=" col-sm-3 form">
+                <div class=" col-sm-3 card space icon-relative">
+                    <label for="label">Card number:</label>
+                    <input type="text class" class="input" name="card_number" placeholder="Card Number" data-mask="0000 0000 0000 0000">
+                    <i class="far fa-credit-card"></i>
+                </div>
+                <div class=" col-sm-3 card-grp space">
+                    <div class="card-item icon-relative">
+                       <label for="label">Expery date:</label>
+                       <input type="text class" class="input" name="expery_date" placeholder="DD / MM" data-mask="00 / 00">
+                       <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <div class=" col-sm-3 card-item icon-relative">
+                        <label for="label">CVC:</label>
+                        <input type="text class" class="input" name="cvc" placeholder="000" data-mask="000">
+                        <i class="fas fa-lock"></i>
+                     </div>
+                </div>
+                <div class=" col-sm-3 card space icon-relative">
+                    <label for="label">Card Holder:</label>
+                    <input type="text class" class="input" name="card_holder" placeholder="Holder Name">
+                    <i class="fas fa-user"></i>
+                </div>
+                
+                
+                <input type="checkbox" id="click">
+                <label for="click" class="click-me">
+                    <div class=" col-sm-6 btn">
+                       pay
+                    </div>
+                </label>
+                <div class="content">
+                    <div class="header">
+                        <h2>Your Payment Is Done</h2>
+                        <label for="click" class="fas fa-times" onclick="window.close()"></label>
+                    </div>
+                    <label for="click" class="fas fa-check"></label>
+                    <p>Congralations</p>
+                    <div class="line"></div>
+                    <label for="click" class="close-btn" onclick="window.close()">
+                        Close
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</body>
+</html>
